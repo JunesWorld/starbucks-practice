@@ -1,3 +1,41 @@
+/* COMMON(공통적으로 적용되는 부분) */
 body {
-  color: red;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+/* 
+img를 이제부터 글자요소(Inline)가 아닌 Block요소로 취급하겠다 
+이미지를 삽입했을 때 빈 공간을 없애기 위함
+*/
+img {
+  display: block;
+}
+
+/* HEADER */
+header {
+  background-color: royalblue;
+}
+/* header 가운데 정렬 */
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: orange;
+  position: relative;
+}
+/* 
+[수직 가운데 배치] 
+습관화!! position:absolute를 사용했다면 부모요소(inner)에도 position값이 있어야 한다! 
+[정 중앙 배치]
+width / left / right 까지 명시
+*/
+header .logo {
+  height: 75px;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
