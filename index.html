@@ -36,9 +36,9 @@
   
   <!-- Icon -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
   <link rel="stylesheet" href="./css/main.css" />
 
+  <!-- HTML구조가 모두 해석이 되면 main.js가 동작하도록 하기 위해 defer 속성 추가 -->
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -51,6 +51,31 @@
       <a href="/" class="logo">
         <img src="./images/starbucks_logo.png" alt="STARBUCKS">
       </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">Sign In</a>
+          </li>
+          <li>
+            <!-- 
+              [권장!]javascript:void(0) or #
+              링크가 아직 준비되지 않았지만, 빈 부분으로 남기지 않기 위해서 사용
+            -->
+            <a href="javascript:void(0)">My Starbucks</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Customer Service & Ideas</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Find a Store</a>
+          </li>
+        </ul> 
+        <div class="search">
+          <input type="text" />
+          <div class="material-icons">search</div>
+        </div>
+      </div>
 
     </div>
   </header>

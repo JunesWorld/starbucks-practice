@@ -13,17 +13,20 @@ img를 이제부터 글자요소(Inline)가 아닌 Block요소로 취급하겠�
 img {
   display: block;
 }
-
+/* a Tag 밑줄 제거 */
+a {
+  text-decoration: none;
+}
 /* HEADER */
 header {
-  background-color: royalblue;
+  background-color: #f6f5f0;
+  border-bottom:  1px solid #c8c8c8;
 }
 /* header 가운데 정렬 */
 header .inner {
   width: 1100px;
   height: 120px;
   margin: 0 auto;
-  background-color: orange;
   position: relative;
 }
 /* 
@@ -38,4 +41,81 @@ header .logo {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+/* 
+sub-menu = Sing In, My Starbucksm... 
+HTML sub-menu에 있는 것 순서대로 정리
+*/
+header .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex; /* 검색 아이콘 정렬 */
+}
+header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;
+  display: flex; /* 수평 정렬 */
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+/* 서브 메뉴 구분선 */
+header .sub-menu ul.menu li::before {
+  content: "";
+  display: #e5e5e5;
+  width: 1px;
+  height: 12px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* 서브 메뉴 구분선 중 Sign In 왼쪽 구분선 제외 */
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+}
+/* 링크가 달려있다는 것을 hover로 표현 */
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {
+  height: 34px;
+  position: relative;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* 가로 세로 사이즈 유지하면서 내부 여백, 테두리 추가 */
+  border-radius: 5px;
+  outline: none; /* 테두리 선 자동 적용되는 것 해제 */
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+header .sub-menu .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+/* 검색 아이콘 눌렀을 때 아이콘 사라지는 효과 */
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
 }
