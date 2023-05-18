@@ -38,6 +38,28 @@
 - `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
 - `favicon.png` 500 x 500 (px) : 더 높은 해상도!
 
+## Google Fonts
+
+페에지에서 사용할 '나눔고딕' 폰트를 지정 (400, 700)
+
+> 폰트 라이센스 꼭 확인!!(구글은 대부분 무료)
+
+[Google Fonts](https://fonts.google.com/)
+```html
+<!-- Font : 나눔고딕 400, 700 -->
+<!-- main.css 보다 먼저 와야 한다 -->
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+```
+
+페이지에 폰트를 적용(css 상속)한다.
+
+```css
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+```
+
 ## 오픈 그래프(The Open Graph Protocol)
 
 웹 페이지가 소셜미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.
