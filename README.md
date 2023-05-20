@@ -116,4 +116,11 @@ body {
 
 ## GSAP & ScrollToPlugin
 
-[GSAP(The GreenSock Animation Platform)](https://cdnjs.com/libraries/gsap)은 자바스크립트로 제어하는 
+[GSAP(The GreenSock Animation Platform)](https://cdnjs.com/libraries/gsap)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다.
+[ScrollToPlugin](https://greensock.com/scrolltoplugin/)은 스크롤 애니메이션을 지원하는 GSAP 플러그인입니다.
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+```js
+gsap.to(
