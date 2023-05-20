@@ -123,4 +123,47 @@ body {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js" integrity="sha512-WFeBxQtM/n6U8/Nd0Hz/Hq7n75NImbzM7Kc0y/4kE0kHnH1Be+nzm32RwbGoDsW1D9fjjPvI8LIWxLrZhxew/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 ```js
-gsap.to(
+gsap.to(요소, 시간, 옵션)
+// 또는
+TweenMzs.to(요소, 시간, 옵션)
+```
+```js
+gsap.to(window, .7, {
+  scrollTo: 0
+});  
+```
+
+## Swiper
+[Swiper](https://swiperjs.com/)는 하드웨어 가속 전환과 여러 기본 동작을 갖춘 현대적인 슬라이드 라이브러리입니다.
+
+> Version6사용
+
+```html
+<!-- in HEAD -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https//unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+<!-- in BODY -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+  </div>
+</div>
+```
+
+[Swiper API](https://swiperjs.com/swiper-api)(옵션)을 확인하세요!
+
+```js
+new Swiper(요소, 옵션);
+```
+
+```js
+new Swiper('.swiper-container', {
+  direction: 'vertical', // 수직 슬라이드
+  autoplay: true, // 자동 재생 여부
+  loop: true // 반복 재생 여부
+});
+```
+  
