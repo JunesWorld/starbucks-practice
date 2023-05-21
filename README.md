@@ -169,5 +169,6 @@ new Swiper('.swiper-container', {
 ## Youtube API
 
 [IFrame Player API](https://developers.google.com/youtube/iframe_api_reference?h1=ko)를 
-통해 
-## Youtube API
+통해 YouTube 동영상을 제어할 수 있습니다.
+
+유튜브 영상이 출력될 위치에 요소를 지정(생성)합니다.
