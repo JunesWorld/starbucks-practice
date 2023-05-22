@@ -587,3 +587,10 @@ header .badges .badge {
   width: 100%;
   height: 100%;
 }
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute; /*부모요소=youtube__area*/
+  top: 0;
+  left: 0;
+}
