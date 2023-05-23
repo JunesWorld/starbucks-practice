@@ -30,7 +30,6 @@ const toTopEl = document.querySelector('#to-top');
 // _.throttle(함수, 시간(몇초에 한번씩 실행 될 지))
 // 300 = 0.3초 -> 만큼 함수 제어
 window.addEventListener('scroll', _.throttle(function () {
-  console.log(window.scrollY);
   if (window.scrollY > 500) {
     // Badge 숨기기
     // 문제점! Badge 시각적으로만 없어진 것이지 그 위치에는 있는 상태
@@ -38,25 +37,25 @@ window.addEventListener('scroll', _.throttle(function () {
     gsap.to(badgeEl, .6, {
       opacity: 0,
       display: 'none' // 문제점 해결! 실제로 안보이면 위치에서도 없애는 것
-    });
+    })
     // 마지막 Scroll 버튼 보이기!
     gsap.to('#to-top', .2, {
       x: 0
-    });
+    })
 
   } else {
     // Badge 보이기
     gsap.to(badgeEl, .6, {
       opacity: 1,
-      display: 'blcok'
-    });
+      display: 'block'
+    })
     // 마지막 Scroll 버튼 숨기기!
     gsap.to('#to-top', .2, {
       x: 100
-    });
+    })
 
   }
-}, 300));
+}, 300))
 
 // 마지막 Scroll Badge 기능
 toTopEl.addEventListener('click', function() {
@@ -72,8 +71,8 @@ fadeEls.forEach(function(fadeEl, index) {
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * .7, // 0.7, 1.4, 2.1, 2.7 -> 순차적으로 애니메이션 효과
     opacity: 1
-  });
-});
+  })
+})
 
 
 // new Swiper(선택자, 옵션)
