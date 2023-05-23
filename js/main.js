@@ -60,7 +60,7 @@ window.addEventListener('scroll', _.throttle(function () {
 
 // 마지막 Scroll Badge 기능
 toTopEl.addEventListener('click', function() {
-  gsap.to(window, .7 { // window는 화면자체를 의미 
+  gsap.to(window, .7, { // window는 화면자체를 의미 
     scrollTo: 0 // 화면의 위치를 0px 지점으로 0.7초 동안 이동시켜주겠다 (Index.html에 plugin 있어야한다)
   })
 })
