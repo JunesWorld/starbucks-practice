@@ -22,6 +22,7 @@ searchInputEl.addEventListener('blur', function() {
 // ***Badge***
 // 화면 오른쪽 배찌를 스크롤 내릴 때 일정 영역이 지나면 없어지는 효과
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 // lodash cdn 라이브러리 추가 후 사용
 // window 객체=화면자체
@@ -38,14 +39,31 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 0,
       display: 'none' // 문제점 해결! 실제로 안보이면 위치에서도 없애는 것
     });
+    // 마지막 Scroll 버튼 보이기!
+    gsap.to('#to-top', .2, {
+      x: 0
+    });
+
   } else {
     // Badge 보이기
     gsap.to(badgeEl, .6, {
       opacity: 1,
       display: 'blcok'
     });
+    // 마지막 Scroll 버튼 숨기기!
+    gsap.to('#to-top', .2, {
+      x: 100
+    });
+
   }
 }, 300));
+
+// 마지막 Scroll Badge 기능
+toTopEl.addEventListener('click', function() {
+  gsap.to(window, .7 { // window는 화면자체를 의미 
+    scrollTo: 0 // 화면의 위치를 0px 지점으로 0.7초 동안 이동시켜주겠다 (Index.html에 plugin 있어야한다)
+  })
+})
 
 
 // [index.html] VISUAL 애니메이션 효과 fade-in
