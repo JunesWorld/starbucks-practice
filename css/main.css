@@ -682,3 +682,51 @@ header .badges .badge {
 .pick-your-favorite .text-group .description {
   margin-bottom: 40px;  
 }
+
+
+/* RESERVE STORE */
+.reserve-store {
+  background-image: url("../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* 스크롤 시 img가 같이 내려오지 않고 뷰포트에 고정 */
+  background-size: cover; /* 배경 이미지를 더 넒은 너비에 맞춰 출력 */
+}
+.reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-store .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px; /* 원근법 적용 */
+}
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  position: absolute;
+  backface-visibility: hidden; /* 뒤집어 졌을 때 뒷면은 화면에서 보이지 않는다. */
+  transition: 1s;
+}
+.reserve-store .medal .front {
+  transform: rotateY(0deg); /* 명시적으로 0도에서 시작하겠다 */
+}
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
+}  
+.reserve-store .medal .back {
+  transform: rotateY(-180deg); /* 요소 뒤집기 / hidden으로 숨겼다 */
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
+}  
+.reserve-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}  
