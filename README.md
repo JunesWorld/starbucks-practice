@@ -225,3 +225,6 @@ function random(min, max) {
   return parseFloat((Math.random() * (max - min) + min).toFixed(2)) 
 }
 ```
+
+## 사이트 배포
+- Netify
