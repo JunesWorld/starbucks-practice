@@ -226,5 +226,16 @@ function random(min, max) {
 }
 ```
 
-## 사이트 배포
-- Netify
+## Netify(사이트 배포)
+- Github Login
+- New site from Git
+- Continuous Deplyment
+  - Github
+  - permission -> Authorize Netify
+- Install Netify
+  - All Repository
+  - Install
+- 만들고자 하는 저장소 선택
+  - Branch : master
+- Deply site
+- 주소 접속! 
