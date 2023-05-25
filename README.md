@@ -239,3 +239,28 @@ function random(min, max) {
   - Branch : master
 - Deply site
 - 주소 접속! 
+
+## Sign In Branch
+- Terminal!
+  - master 
+- git branch
+  - branch 목록 확인
+  - 나가기 = q
+  - git branch -a : 원격에 있는 branch 확인
+- git branch signin
+  - singin branch 생성
+- git checkout sing in
+  - branch 변경
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
