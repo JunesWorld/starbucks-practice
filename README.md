@@ -258,6 +258,12 @@ function random(min, max) {
 - git status
 - git add .
 - git commit -m '로그인 페이지 시작하기'
+- signin 변경사항 수정
+  - 
+- git status
+- git add .
+- git status
+- git commit -m '공통 모듈 분리'
 
 
 
