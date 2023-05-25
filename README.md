@@ -252,7 +252,12 @@ function random(min, max) {
 - git checkout sing in
   - branch 변경
   - Switched to branch 'signin'
-- 
+- 폴더 및 파일 생성
+  - index.html 파일 주변에 singin 폴더 생성
+  - singin 폴더 안에 index.html 파일 생성
+- git status
+- git add .
+- git commit -m '로그인 페이지 시작하기'
 
 
 
