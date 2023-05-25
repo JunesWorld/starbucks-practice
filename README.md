@@ -242,7 +242,7 @@ function random(min, max) {
 - 새로운 branch(signin) 만들고 Merge!
   - Team overview 하단 프로젝트 선택
   - Site Settings / Build & Deploy / Deploy contexts : master
-    - master branch
+    - master branch에 merge해야 사이트에 배포
 
 ## Sign In Branch
 - Terminal!
@@ -305,7 +305,15 @@ function random(min, max) {
     <script defer src="../js/common.js"></script>
     ```
 
-
+## Merge
+- Github 저장소
+- Pull Requests
+  - new pull requests
+  - base:master <--- compare:signin
+  - create pull requests
+  - create pull request
+  - Merge pull Request
+  - confirm merge
 
 
 
