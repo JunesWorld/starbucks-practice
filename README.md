@@ -251,7 +251,8 @@ function random(min, max) {
   - singin branch 생성
 - git checkout sing in
   - branch 변경
-  - 
+  - Switched to branch 'signin'
+- 
 
 
 
