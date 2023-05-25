@@ -255,17 +255,48 @@ function random(min, max) {
 - 폴더 및 파일 생성
   - index.html 파일 주변에 singin 폴더 생성
   - singin 폴더 안에 index.html 파일 생성
-- git status
+- git status (signin Branch!)
 - git add .
 - git commit -m '로그인 페이지 시작하기'
 - signin 변경사항 수정
-  - 
+  - 아래 정리
 - git status
 - git add .
 - git status
 - git commit -m '공통 모듈 분리'
 
-
+## signin 변경사항
+- index.html(./) -> index.html(singin) 복붙
+- header & footer 내용 제외 모두 제거
+  - badges & to top도 제거
+  - 사이에 signin section 
+    ```html
+    <section class="singin"><section/>
+    ```
+- script tag 제거
+  - lodash
+  - GSAP & ScrollToPlugin
+  - Swiper
+  - ScrollMagic
+- 경로 수정
+  - ./ -> ../
+  - cmd + F -> 모두 바꾸기
+- Error 잡기!
+  - js 파일에서 사용하는 script tag 제거해서 발생
+  - main.js 주변 common.js 파일 생성
+  - common.css 생성
+    - common & header & footer
+  - index.html(./)
+    ```html
+    <!-- main보다 위에 작성 -->
+    <link rel="stylesheet" href="./css/common.css" /> 
+    <script defer src="./js/common.js"></script>
+    ``` 
+    index.html(signin) : main 제거 후 추가(경로 확인!)
+    ```html
+    <script defer src="../js/common.css"></script>
+    <script defer src="../js/common.js"></script>
+    ```
 
 
 
