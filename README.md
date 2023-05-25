@@ -264,6 +264,7 @@ function random(min, max) {
 - git add .
 - git status
 - git commit -m '공통 모듈 분리'
+- signin 
 
 ## signin 변경사항
 - index.html(./) -> index.html(singin) 복붙
