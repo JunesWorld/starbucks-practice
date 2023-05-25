@@ -243,6 +243,7 @@ function random(min, max) {
   - Team overview 하단 프로젝트 선택
   - Site Settings / Build & Deploy / Deploy contexts : master
     - master branch에 merge해야 사이트에 배포
+- Deploy에서 주소로 들어가 확인! 
 
 ## Sign In Branch
 - Terminal!
