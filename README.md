@@ -239,6 +239,10 @@ function random(min, max) {
   - Branch : master
 - Deply site
 - 주소 접속! 
+- 새로운 branch(signin) 만들고 Merge!
+  - Team overview 하단 프로젝트 선택
+  - Site Settings / Build & Deploy / Deploy contexts : master
+    - master branch
 
 ## Sign In Branch
 - Terminal!
